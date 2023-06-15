@@ -1,0 +1,10 @@
+.component1 {
+    /* mobile styles go here */
+  }
+  
+  @media (min-width: 600px) {
+    .component1 {
+      /* desktop styles go here */
+    }
+  }
+  

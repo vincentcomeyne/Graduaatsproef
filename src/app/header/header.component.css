@@ -1,0 +1,25 @@
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #00afef;
+    padding: 2px;
+  }
+  
+  .header-icon {
+    margin-left: 10px;
+    width: 55px;
+  }
+  
+  .header-title-wrapper {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .header-title {
+    color: white;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
