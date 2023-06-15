@@ -1,0 +1,13 @@
+{
+    "/get_bar": {
+      "target": "https://graduaatsproef.herokuapp.com",
+      "secure": false,
+      "changeOrigin": true
+    },
+    "/get_pie": {
+      "target": "https://graduaatsproef.herokuapp.com",
+      "secure": false,
+      "changeOrigin": true
+    }
+  }
+  

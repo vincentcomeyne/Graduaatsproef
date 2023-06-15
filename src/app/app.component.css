@@ -5,3 +5,8 @@
     width: 56.25vh;
     margin: auto;
 }
+
+app-component1, app-component2 {
+  max-width: 56.25vh; 
+  margin: auto;
+}
