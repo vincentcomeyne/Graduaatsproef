@@ -7,6 +7,8 @@
 }
 
 app-component1, app-component2 {
-  max-width: 56.25vh; 
-  margin: auto;
+  justify-content: center;
+  display: flex;
+  scale: 60%;
+  height: 300px;
 }

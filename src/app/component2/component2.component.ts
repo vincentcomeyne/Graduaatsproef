@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-component2',
@@ -7,17 +8,17 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
   styleUrls: ['./component2.component.css']
 })
 export class Component2Component {
-  imageUrl!: string;
+  imageUrl!: SafeHtml;
   error: any;
 
-  constructor(private http: HttpClient) {
+  constructor(private http: HttpClient, private _sanitizer: DomSanitizer) {
     this.getImageUrl();
   }
 
   getImageUrl() {
     this.http.get('/get_pie', { responseType: 'text' }).subscribe(
       data => {
-        this.imageUrl = data;
+        this.imageUrl = this._sanitizer.bypassSecurityTrustHtml(data);
       },
       (error: HttpErrorResponse) => {
         this.error = error;
