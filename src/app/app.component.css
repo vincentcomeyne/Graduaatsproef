@@ -4,11 +4,17 @@
     height: 100vh;
     width: 56.25vh;
     margin: auto;
+    background-color: white;
+    justify-content: space-between;
 }
-
+app-header, app-footer {
+  flex-shrink: 0; 
+}
 app-component1, app-component2 {
   justify-content: center;
   display: flex;
   scale: 60%;
+  flex-grow: 1;
   height: 300px;
+  background-color: white;
 }

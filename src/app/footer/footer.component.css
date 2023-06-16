@@ -1,7 +1,14 @@
 footer {
-    position: relative;
-    display: flex;
-    align-items: center;
-    background-color: #00afef;
-    padding: 2px;
-  }
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00afef;
+  padding: 13px;
+}
+
+.header-title {
+  color: white;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
